@@ -1,33 +1,126 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body, html {
-    height: 100%;
-    margin: 0;
-}
-
-.bg {
-    /* The image used */
-    background-image: url("img_girl.jpg");
-
-    /* Full height */
-    height: 100%; 
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-</style>
+  <title>Facebook Api</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
 </head>
 <body>
 
-<div class="bg"></div>
-    <div class="jumbotron" inputtext="textbox">saurabh<div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+	  <li>Facebook Api </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
 
-<p>This example creates a full page background image. Try to resize the browser window to see how it always will cover the full screen (when scrolled to top), and that it scales nicely on all screen sizes.</p>
+    <div class="col-sm-8 text-left"> 
+      <h1>Token</h1>
+	  <p>Token is the string value used to access page . The token is the key to access the page using api
+      <hr>
+	  
+	    
+	  
+	  <h1>To view all post on page</h1>
+	  <p> to view all post using facebook api by using get method
+	  <img src="images/Screenshot (5).png" height=300px width=400px>
+      <hr>
+	  
+	  <h1>To view a sing comment</h1>
+	  <p>this is used to view a single comment by using get methods
+	  <img src="images/Screenshot (7).png" height=300px width=400px>
+      <hr>
+	  
+	  <h1>user permission </h1>
+	  <p>the api has to take some user or page permission to fetch or update data on page
+	  <img src="images/Screenshot (8).png" height=300px width=400px>
+      <hr>
+	  
+	  <h1>view all comments posts </h1>
+	  <p> to check all comments ,likes,reactions,comment-reply given on single post
+	  <img src="images/Screenshot (9).png" height=300px width=400px>
+      <hr>
+	    
+	  <h1>demo page to view all posts</h1>
+	  <p> the page where all the functions are executed
+	  <img src="images/Screenshot (11).png" height=300px width=400px>
+      <hr>
+	  
+	  <h1>reply comment by using facebook api </h1>
+	  <p> this is used to update comment here the comment id used to identify comment
+	  <p>reply-comment is message type and message is mentioned in field
+	  <p><there are two fiels >
+	  <p>one field is for type of data posted (for ex :- link for link,message for string type message)
+<p >second for the data (in link:-url to pe written,in message:- message is to be written)	  
+	  <img src="images/Screenshot (12).png" height=300px width=400px>
+      <hr>
+	  
+	  
+	  <h1>webhooks</h1>
+	  <p>webhooks call back url requried and authentication token
+	 <p> the webhooks is used get notification of every update
+	  <img src="images/Screenshot (2).png" height=300px width=400px>
+      <hr>
+    </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
 
 </body>
 </html>
