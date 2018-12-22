@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Facebook Api</title>
@@ -63,56 +63,137 @@
   </div>
 </nav>
   
-<div class="container-fluid text-center">    
+<div class="container-fluid text-center" >    
   <div class="row content">
 
     <div class="col-sm-8 text-left"> 
-      <h1>Token</h1>
-	  <p>Token is the string value used to access page . The token is the key to access the page using api
-      <hr>
+
+<ul>
+	<li><h1>Token</h1>
+	  <ul>
+	  <li>token is used to access page posts and comments</li>
+	  <li>the token's validity is 1 hour and it can be extented to 2 months </li>
+	  <li>example of token</li>
+	  <br/>
+	  </ul>
+	  <br/>
+	   </li> 
+	  <br/>
+	 <li> <h1>To view all post on page</h1>
+	  <ul>
+	  <li>get method used</li>
+	  <li>to view all posts on page</li>
+	  <li>parameter used :-fields=posts<li>
 	  
-	    
-	  
-	  <h1>To view all post on page</h1>
 	  <p> to view all post using facebook api by using get method
-	  <img src="images/Screenshot (5).png" height=300px width=400px>
+	  <br/>
+	  <img src="images/Screenshot (5).png" height=600px width=1020px>
+      
+	  </ul>
+	  <hr>
+	  </li>
+	  <li>
+	  <h1>To view a  comment</h1>
+	  <ul>
+	  <li>method used get</li>
+	  <li>to view comments on posts</li>
+	  <li>the comments time and comment id is generated</li>
+	  <br/>
+	  <img src="images/Screenshot (7).png" height=700px width=900px>
       <hr>
+	  </li>
+	  </ul>
 	  
-	  <h1>To view a sing comment</h1>
-	  <p>this is used to view a single comment by using get methods
-	  <img src="images/Screenshot (7).png" height=300px width=400px>
+	  <li>
+	  <ul>
+	  <li><h1>user permission </h1></li>
+	  <li>to get permission for access details</li>
+	  <li>different type of permission to give access to page</li>
+	  <li><p>the api has to take some user or page permission to fetch or update data on page</li>
+	  <br/>
+	  <img src="images/Screenshot (8).png" height=700px width=900px>
       <hr>
+	  </ul>
+	  </li>
 	  
-	  <h1>user permission </h1>
-	  <p>the api has to take some user or page permission to fetch or update data on page
-	  <img src="images/Screenshot (8).png" height=300px width=400px>
-      <hr>
-	  
+	  <li>
+	  <ul>
 	  <h1>view all comments posts </h1>
+	  <li>to get all comments on post</li>
+	  <li>to get all likes on post</li>
+	  <li>the post id is one but comment id is different</li>
+	  <li>every comment has its unique comment id</li>
+	  <li>fields=posts{comments,likes,reactions}
+	  </li>
 	  <p> to check all comments ,likes,reactions,comment-reply given on single post
-	  <img src="images/Screenshot (9).png" height=300px width=400px>
+	  <br/>
+	  <br>
+	  <br/>
+	  <img src="images/Screenshot (9).png" height=700px width=900px>
       <hr>
-	    
-	  <h1>demo page to view all posts</h1>
+	    </li>
+		</ul>
+		
+		<li>
+		<ul>
+		<li>
+	  <h1>demo page to view all posts</h1></li>
+	  <li>
 	  <p> the page where all the functions are executed
-	  <img src="images/Screenshot (11).png" height=300px width=400px>
+</li>
+<br/>
+	  <img src="images/Screenshot (11).png" height=700px width=900px>
       <hr>
+	  <br/>
+	  </li>
+	  </ul>
 	  
-	  <h1>reply comment by using facebook api </h1>
-	  <p> this is used to update comment here the comment id used to identify comment
-	  <p>reply-comment is message type and message is mentioned in field
-	  <p><there are two fiels >
-	  <p>one field is for type of data posted (for ex :- link for link,message for string type message)
-<p >second for the data (in link:-url to pe written,in message:- message is to be written)	  
-	  <img src="images/Screenshot (12).png" height=300px width=400px>
+	  <li>
+	  <ul>
+	  <li>
+	  <h1>reply comment using graph api </h1></li>
+	  <li>method used = post</li>
+	  
+	 
+	  <li> <p> this is used to update comment here the comment id used to identify comment
+	  </li>
+	  
+	  <li><p>reply-comment is message type and message is mentioned in field
+	  
+	  </li>
+	  <li><p>there are two fields 
+	 
+	  </li>
+	  <li> <p>one field is for type of data posted (for ex :- link for link,message for string type message)
+
+	  </li>
+	  <li><p >second for the data (in link:-url to pe written,in message:- message is to be writtens)	  
+
+	  </li>
+	  <br/>
+	  <img src="images/Screenshot (12).png" height=700px width=900px>
       <hr>
+	  </li>
+	  </ul>
 	  
-	  
-	  <h1>webhooks</h1>
+	  <li>
+	  <ul>
+	  <li>
+	  <h1>webhooks</h1></li>
+	  <li>
 	  <p>webhooks call back url requried and authentication token
+	  </li>
+	  <li>
 	 <p> the webhooks is used get notification of every update
-	  <img src="images/Screenshot (2).png" height=300px width=400px>
-      <hr>
+	 </li>
+	 <li>required:- server callback url, access token
+	 </li>
+	 <br/>
+	  <img src="images/Screenshot (2).png" height=700px width=900px>
+      </li>
+	  </ul>
+	  </ul>
+	  <hr>
     </div>
     </div>
   </div>
